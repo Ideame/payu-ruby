@@ -9,7 +9,7 @@ class Payu
         @test = test
         @lang = lang
 
-        @api_uri = URI.parse("https://#{'stg.' if test}api.payulatam.com")
+        @api_uri = URI.parse("https://#{'sandbox.' if test}api.payulatam.com")
         @payments_api_url = "/payments-api/4.0/service.cgi"
         @reports_api_url = "/reports-api/4.0/service.cgi"
     end
